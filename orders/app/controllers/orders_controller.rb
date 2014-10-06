@@ -27,7 +27,7 @@ class OrdersController < ApplicationController
 
     if @order.save
       CreditCheckProcessor.new(@order.id).delay.call
-      redirect_to @order, notice: 'Order was successfully created.'
+      redirect_to orders_path, notice: 'Order was successfully created.'
     else
       render :new
     end

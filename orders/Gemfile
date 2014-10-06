@@ -19,6 +19,7 @@ gem "title"
 gem "uglifier"
 gem "thin"
 gem "bunny"
+gem 'faye'
 
 group :development do
   gem "foreman"
