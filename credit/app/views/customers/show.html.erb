@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @customer.uuid %>
+</p>
+
+<p>
+  <strong>Credit limit:</strong>
+  <%= @customer.credit_limit %>
+</p>
+
+<p>
+  <strong>Current balance:</strong>
+  <%= @customer.current_balance %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
