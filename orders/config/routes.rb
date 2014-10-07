@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :items
 
   resources :customers
-  root 'customers#index'
+  root 'orders#index'
 end
